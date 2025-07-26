@@ -1,0 +1,1109 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--
+<ReadMe>
+
+This XML can be imported in Altium Designer 14 using WEBENCH Altium Connector Extension and simulated using WEBENCH Simulation Engine.
+The WEBENCH Altium Connector provides an interface to the Texas Instruments WEBENCH Designer Tools as well as to open WEBENCH exported Designs directly from inside Altium Designer.
+It also includes the advanced WEBENCH Simulation Engine which can be used for offline circuit simulations.
+You will need a activation key from TI to be able to use the WEBENCH Simulation Engine.
+You can download the WEBENCH extension from Altium Designer 14 Extensions.
+
+Press Release:
+http://www.altium.com/en/altium/press-center/press-releases/altium-designer-connects-ti%E2%80%99s-webench%C2%AE-power-supply-tools-fast
+
+How to use:
+http://blog.live.altium.com/#Blogs/ti-webench-release
+
+Connector Details
+http://techdocs.altium.com/display/ATPE/WEBENCH+Altium+Connector
+
+User Manual:
+http://techdocs.altium.com/sites/default/files/wiki_attachments/235782/WEBENCH_Altium_Connector_User_Guide_v1.2.pdf
+
+</ReadMe>
+-->
+<schematic>
+  <circuit>
+    <text id="T_123456" position="400,-148" fontname="Times New Roman" fontsize="27" bold="0" color="#294901">
+      <![CDATA[TPS562200 Startup Simulation
+(Exported from WEBENCH® Designer)]]>
+    </text>
+    <text id="T_123456" position="945,-148" fontname="Arial" fontsize="13" bold="1" italic="1" color="#278190" border="1">
+      <![CDATA[Title :    TPS562200DDCR 12V-12V to 5.00V @ 1A
+-------------------------------------------------------------------------
+WEBENCH® User ID                      :       18043538
+WEBENCH® Design ID                  :       1
+Date of WEBENCH® Export           :       26-Jul-2025
+Time of WEBENCH® Export          :       12:47:41 AM
+WEBENCH® Export Tool Version :       E1.67-X2.01]]>
+    </text>
+    <component type="Cin" typeid="57" position="360,410" mirrored="0" nodematch="0" macrotype="2" orientation="0">
+      <parameter idx="0" encrypted="0">
+        <![CDATA[
+***********************************
+*     Created by WB Importer      *
+***********************************
+.SUBCKT MAIN_BLOCK_Cin_WB_CAP_POLARIZED 1 2
+* C = 2.0E-5 F
+* ESR = 0.002926 Ohm
+
+Ccap 1 3 2.0E-5
+Resr 3 2 0.002926
+
+.ENDS]]>
+      </parameter>
+      <image>
+        <hotzone points="-24,60,24,-60"/>
+        <shape type="line" width="Hair" color="#0000ff" points="0,-60,0,-40"/>
+        <shape type="line" width="Hair" color="#0000ff" points="0,60,0,40"/>
+        <shape type="line" width="1" color="#0000ff" points="24,-6,-24,-6"/>
+        <shape type="line" width="1" color="#0000ff" points="0,40,0,6"/>
+        <shape type="line" width="1" color="#0000ff" points="0,-6,0,-40"/>
+        <shape type="line" width="1" color="#0000ff" points="24,6,-24,6"/>
+        <legend text="10 uF" position="8,18" orientation="0" fontname="Arial" fontsize="12" bold="0" italic="0" color="#229922"/>
+        <legend text="5.852 mOhm" position="8,32" orientation="0" fontname="Arial" fontsize="12" bold="0" italic="0" color="#229922"/>
+        <legend text="qty=2" position="8,48" orientation="0" fontname="Arial" fontsize="12" bold="0" italic="0" color="#229922"/>
+        <pin position="0,-60" dir="0" length="0" text="1"/>
+        <pin position="0,60" dir="0" length="0" text="2"/>
+        <label text="Cin" position="366,388" textroot=" " orientation="0" color="#228822"/>
+      </image>
+    </component>
+    <component type="Ground" typeid="2" position="890,660" orientation="0" mirrored="0">
+      <image>
+        <label text="GND1" position="890,660" textroot="GND1" orientation="0" color="#228822"/>
+      </image>
+    </component>
+    <component type="IInductor" typeid="34" position="1260,200" mirrored="0" nodematch="0" macrotype="2" orientation="0">
+      <parameter idx="0" encrypted="0">
+        <![CDATA[***********************************
+*     Created by WB Importer      *
+***********************************
+.SUBCKT IInductor 1 2 
+V_Iprobe 1 2 0.0
+.ENDS
+]]>
+      </parameter>
+      <parameter idx="1" name="VALUE" value="0"/>
+      <image>
+        <hotzone points="-30,-6,30,6"/>
+        <shape type="line" width="Hair" color="#0000ff" points="-30,0,30,0"/>
+        <shape type="line" width="1" color="#0000ff" points="-6,-4,-6,4"/>
+        <shape type="line" width="1" color="#0000ff" points="-6,4,4,0"/>
+        <shape type="line" width="1" color="#0000ff" points="4,0,-6,-4"/>
+        <pin position="-30,0" dir="0" length="0" text="1"/>
+        <pin position="30,0" dir="0" length="0" text="2"/>
+        <label text="IInductor" position="1260,200" textroot=" " orientation="0" color="#228822"/>
+      </image>
+    </component>
+    <wire points="1850,640,1870,640" label=""/>
+    <component type="Rfbb" mirrored="0" typeid="57" nodematch="0" macrotype="2" position="1480,520" orientation="0">
+      <parameter idx="0" encrypted="0">
+        <![CDATA[
+***********************************
+*     Created by WB Importer      *
+***********************************
+.subckt MAIN_BLOCK_WB_TPS562200_BUCK_BLOCK_Rfbb 4 0
+Rfbb 4 0 10000.0
+
+.ends]]>
+      </parameter>
+      <image>
+        <hotzone points="-10,60,10,-60"/>
+        <shape type="line" width="1" color="#0000ff" points="0,60,0,40"/>
+        <shape type="line" width="1" color="#0000ff" points="0,40,-10,30"/>
+        <shape type="line" width="1" color="#0000ff" points="-10,30,10,10"/>
+        <shape type="line" width="1" color="#0000ff" points="10,10,-10,-10"/>
+        <shape type="line" width="1" color="#0000ff" points="-10,-10,10,-30"/>
+        <shape type="line" width="1" color="#0000ff" points="10,-30,0,-40"/>
+        <shape type="line" width="1" color="#0000ff" points="0,-40,0,-60"/>
+        <legend text="10 kOhm" position="10,-8" orientation="0" fontname="Arial" fontsize="12" bold="0" italic="0" color="#229922"/>
+        <pin position="0,60" dir="0" length="0" text="0"/>
+        <pin position="0,-60" dir="0" length="0" text="4"/>
+        <label text="Rfbb" position="1498,490" textroot=" " orientation="0" color="#228822"/>
+      </image>
+    </component>
+    <component type="VIn" typeid="4" position="390,200" orientation="0" mirrored="0">
+      <image>
+        <label text="VIn" position="390,170" textroot="VIn" orientation="0" color="#228822"/>
+      </image>
+    </component>
+    <component type="Cbst" typeid="57" position="970,290" mirrored="0" nodematch="0" macrotype="2" orientation="0">
+      <parameter idx="0" encrypted="0">
+        <![CDATA[
+***********************************
+*     Created by WB Importer      *
+***********************************
+.SUBCKT MAIN_BLOCK_Cbst_WB_CAP_POLARIZED 1 2
+* C = 1.0E-7 F
+* ESR = 0.28 Ohm
+
+Ccap 1 3 1.0E-7
+Resr 3 2 0.28
+
+.ENDS]]>
+      </parameter>
+      <image>
+        <hotzone points="-24,60,24,-60"/>
+        <shape type="line" width="Hair" color="#0000ff" points="0,-60,0,-40"/>
+        <shape type="line" width="Hair" color="#0000ff" points="0,60,0,40"/>
+        <shape type="line" width="1" color="#0000ff" points="24,-6,-24,-6"/>
+        <shape type="line" width="1" color="#0000ff" points="0,40,0,6"/>
+        <shape type="line" width="1" color="#0000ff" points="0,-6,0,-40"/>
+        <shape type="line" width="1" color="#0000ff" points="24,6,-24,6"/>
+        <legend text="100 nF" position="8,18" orientation="0" fontname="Arial" fontsize="12" bold="0" italic="0" color="#229922"/>
+        <legend text="0.28 Ohm" position="8,32" orientation="0" fontname="Arial" fontsize="12" bold="0" italic="0" color="#229922"/>
+        <legend text="" position="8,48" orientation="0" fontname="Arial" fontsize="12" bold="0" italic="0" color="#229922"/>
+        <pin position="0,-60" dir="0" length="0" text="1"/>
+        <pin position="0,60" dir="0" length="0" text="2"/>
+        <label text="Cbst" position="976,268" textroot=" " orientation="0" color="#228822"/>
+      </image>
+    </component>
+    <component type="IIC" typeid="34" position="470,200" mirrored="0" nodematch="0" macrotype="2" orientation="0">
+      <parameter idx="0" encrypted="0">
+        <![CDATA[***********************************
+*     Created by WB Importer      *
+***********************************
+.SUBCKT IIC 1 2 
+V_Iprobe 1 2 0.0
+.ENDS
+]]>
+      </parameter>
+      <parameter idx="1" name="VALUE" value="0"/>
+      <image>
+        <hotzone points="-30,-6,30,6"/>
+        <shape type="line" width="Hair" color="#0000ff" points="-30,0,30,0"/>
+        <shape type="line" width="1" color="#0000ff" points="-6,-4,-6,4"/>
+        <shape type="line" width="1" color="#0000ff" points="-6,4,4,0"/>
+        <shape type="line" width="1" color="#0000ff" points="4,0,-6,-4"/>
+        <pin position="-30,0" dir="0" length="0" text="1"/>
+        <pin position="30,0" dir="0" length="0" text="2"/>
+        <label text="IIC" position="470,200" textroot=" " orientation="0" color="#228822"/>
+      </image>
+    </component>
+    <component type="IIn" typeid="34" position="280,200" mirrored="0" nodematch="0" macrotype="2" orientation="0">
+      <parameter idx="0" encrypted="0">
+        <![CDATA[***********************************
+*     Created by WB Importer      *
+***********************************
+.SUBCKT IIn 1 2 
+V_Iprobe 1 2 0.0
+.ENDS
+]]>
+      </parameter>
+      <parameter idx="1" name="VALUE" value="0"/>
+      <image>
+        <hotzone points="-30,-6,30,6"/>
+        <shape type="line" width="Hair" color="#0000ff" points="-30,0,30,0"/>
+        <shape type="line" width="1" color="#0000ff" points="-6,-4,-6,4"/>
+        <shape type="line" width="1" color="#0000ff" points="-6,4,4,0"/>
+        <shape type="line" width="1" color="#0000ff" points="4,0,-6,-4"/>
+        <pin position="-30,0" dir="0" length="0" text="1"/>
+        <pin position="30,0" dir="0" length="0" text="2"/>
+        <label text="IIn" position="280,200" textroot=" " orientation="0" color="#228822"/>
+      </image>
+    </component>
+    <component type="ISwitch" typeid="34" position="1040,200" mirrored="0" nodematch="0" macrotype="2" orientation="0">
+      <parameter idx="0" encrypted="0">
+        <![CDATA[***********************************
+*     Created by WB Importer      *
+***********************************
+.SUBCKT ISwitch 1 2 
+V_Iprobe 1 2 0.0
+.ENDS
+]]>
+      </parameter>
+      <parameter idx="1" name="VALUE" value="0"/>
+      <image>
+        <hotzone points="-30,-6,30,6"/>
+        <shape type="line" width="Hair" color="#0000ff" points="-30,0,30,0"/>
+        <shape type="line" width="1" color="#0000ff" points="-6,-4,-6,4"/>
+        <shape type="line" width="1" color="#0000ff" points="-6,4,4,0"/>
+        <shape type="line" width="1" color="#0000ff" points="4,0,-6,-4"/>
+        <pin position="-30,0" dir="0" length="0" text="1"/>
+        <pin position="30,0" dir="0" length="0" text="2"/>
+        <label text="ISwitch" position="1040,200" textroot=" " orientation="0" color="#228822"/>
+      </image>
+    </component>
+    <component type="L1" typeid="57" position="1150,200" mirrored="0" nodematch="0" macrotype="2" orientation="0">
+      <parameter idx="0" encrypted="0">
+        <![CDATA[
+***********************************
+*     Created by WB Importer      *
+***********************************
+.SUBCKT MAIN_BLOCK_L1_WB_INDUCTOR 1 2
+*{ L = 4.7E-6 DCR = 0.0376 }
+* PARAMETERS: L INDUCTANCE IN HENRIES, DCR DC SERIES RESISTANCE IN OHMS
+
+L1 2 3 4.7E-6
+RDCR 3 1 0.0376
+
+.ENDS]]>
+      </parameter>
+      <image>
+        <hotzone points="-60,-10,60,10"/>
+        <shape type="line" width="Hair" color="#0000ff" points="40,0,60,0"/>
+        <shape type="line" width="Hair" color="#0000ff" points="-40,0,-60,0"/>
+        <legend text="4.7 uH" position="-30,8" orientation="0" fontname="Arial" fontsize="12" bold="0" italic="0" color="#229922"/>
+        <legend text="37.6 mOhm" position="-30,22" orientation="0" fontname="Arial" fontsize="12" bold="0" italic="0" color="#229922"/>
+        <shape type="arc" color="#0000ff" width="2" points="-40,-10,-20,10,90,90"/>
+        <shape type="arc" color="#0000ff" width="2" points="-40,-10,-20,10,0,90"/>
+        <shape type="arc" color="#0000ff" width="2" points="-20,-10,0,10,90,90"/>
+        <shape type="arc" color="#0000ff" width="2" points="-20,-10,0,10,0,90"/>
+        <shape type="arc" color="#0000ff" width="2" points="0,-10,20,10,90,90"/>
+        <shape type="arc" color="#0000ff" width="2" points="0,-10,20,10,0,90"/>
+        <shape type="arc" color="#0000ff" width="2" points="20,-10,40,10,90,90"/>
+        <shape type="arc" color="#0000ff" width="2" points="20,-10,40,10,0,90"/>
+        <pin position="-60,0" dir="0" length="0" text="1"/>
+        <pin position="60,0" dir="0" length="0" text="2"/>
+        <label text="L1" position="1116,170" textroot=" " orientation="0" color="#228822"/>
+      </image>
+    </component>
+    <component type="U1_TPS562200DDCR" typeid="57" position="720,260" mirrored="0" nodematch="0" macrotype="2" orientation="0">
+      <parameter idx="0" encrypted="0">
+        <![CDATA[***
+*$
+*U1_TPS562200DDCR
+*****************************************************************************
+* (C) Copyright 2013 Texas Instruments Incorporated. All rights reserved.
+*****************************************************************************
+** This model is designed as an aid for customers of Texas Instruments.
+** TI and its licensors and suppliers make no warranties, either expressed
+** or implied, with respect to this model, including the warranties of
+** merchantability or fitness for a particular purpose. The model is
+** provided solely on an "as is" basis. The entire risk as to its quality
+** and performance is with the customer
+*****************************************************************************
+*
+** Released by: WEBENCH(R) Design Center, Texas Instruments Inc.
+* Part: U1_TPS562200DDCR
+* Model Type: Transient
+* Simulator: TINA
+* Model Version: Final 1.00
+*
+*****************************************************************************
+*
+* Updates:
+*
+* Final 1.00
+* Release to Web.
+*
+***************************************************************************
+.SUBCKT MAIN_BLOCK_U1_WB_TPS562200DDC_ENCR GND SW VIN VFB EN VBST PARAMS: VOUT_SS=0 MODE=0
+.include pspice://../MAIN_BLOCK.U1.WB_TPS562200DDC.enl
+XCALL GND SW VIN VFB EN VBST MAIN_BLOCK_U1_WB_TPS562200DDC PARAMS: VOUT_SS=0 MODE=0 
+.ENDS
+]]>
+      </parameter>
+      <image>
+        <hotzone points="-140,-160,140,140"/>
+        <shape type="line" width="Hair" color="#0000ff" points="-100,100,100,100"/>
+        <shape type="line" width="Hair" color="#0000ff" points="100,100,100,-120"/>
+        <shape type="line" width="Hair" color="#0000ff" points="100,-120,-100,-120"/>
+        <shape type="line" width="Hair" color="#0000ff" points="-100,-120,-100,100"/>
+        <shape type="line" width="Hair" color="#0000ff" points="140,-60,100,-60"/>
+        <shape type="line" width="Hair" color="#0000ff" points="-140,-60,-100,-60"/>
+        <shape type="line" width="Hair" color="#0000ff" points="-140,0,-100,0"/>
+        <shape type="line" width="Hair" color="#0000ff" points="-140,60,-100,60"/>
+        <shape type="line" width="Hair" color="#0000ff" points="140,60,100,60"/>
+        <shape type="line" width="Hair" color="#0000ff" points="140,0,100,0"/>
+        <shape type="line" width="1" color="#ff0000" points="-1,-95,-2,-90"/>
+        <shape type="line" width="1" color="#ff0000" points="-1,-97,-1,-97"/>
+        <shape type="polygon" width="1" color="#ff0000" fill="#ff0000" points="-7,-99,-7,-93,-11,-93,-11,-92,-10,-91,-9,-89,-8,-88,-7,-88,-6,-89,-5,-88,-4,-86,-1,-84,0,-84,0,-86,1,-88,3,-89,4,-90,4,-93,3,-94,3,-96,1,-96,0,-94,2,-94,1,-92,0,-92,-1,-90,0,-90,0,-89,-1,-88,-3,-88,-4,-89,-3,-92,-5,-92,-4,-94,-3,-94,-3,-94,-2,-96,-4,-96,-4,-98,-4,-99"/>
+        <legend text="TPS562200DDC" position="-48,-64" orientation="0" fontname="Arial" fontsize="10" bold="0" italic="0" color="4278190208"/>
+        <pin position="-140,60" dir="0" length="0" text="GND">
+          <legend text="GND" position="-118,50" orientation="0" fontname="Arial" fontsize="10" bold="0" italic="0" color="4286578688"/>
+        </pin>
+        <pin position="140,-60" dir="0" length="0" text="SW">
+          <legend text="SW" position="100,-70" orientation="0" fontname="Arial" fontsize="10" bold="0" italic="0" color="4286578688"/>
+        </pin>
+        <pin position="-140,-60" dir="0" length="0" text="VIN">
+          <legend text="VIN" position="-118,-70" orientation="0" fontname="Arial" fontsize="10" bold="0" italic="0" color="4286578688"/>
+        </pin>
+        <pin position="140,60" dir="0" length="0" text="VFB">
+          <legend text="VFB" position="90,50" orientation="0" fontname="Arial" fontsize="10" bold="0" italic="0" color="4286578688"/>
+        </pin>
+        <pin position="-140,0" dir="0" length="0" text="EN">
+          <legend text="EN" position="-118,-10" orientation="0" fontname="Arial" fontsize="10" bold="0" italic="0" color="4286578688"/>
+        </pin>
+        <pin position="140,0" dir="0" length="0" text="VBST">
+          <legend text="VBST" position="80,-10" orientation="0" fontname="Arial" fontsize="10" bold="0" italic="0" color="4286578688"/>
+        </pin>
+        <label text="U1_TPS562200DDCR" position="580,90" textroot="U1_TPS562200DDCR" orientation="0" color="#228822"/>
+      </image>
+    </component>
+    <component type="VSwitch" typeid="4" position="920,200" orientation="0" mirrored="0">
+      <image>
+        <label text="VSwitch" position="920,170" textroot="VSwitch" orientation="0" color="#228822"/>
+      </image>
+    </component>
+    <component type="Cout" typeid="57" position="1670,400" mirrored="0" nodematch="0" macrotype="2" orientation="0">
+      <parameter idx="0" encrypted="0">
+        <![CDATA[
+***********************************
+*     Created by WB Importer      *
+***********************************
+.SUBCKT MAIN_BLOCK_Cout_WB_CAP_CERAMIC 2 4
+*FAMILY = ANALOG
+*FAMILY = ANALOG
+R1 2 3 0.001855
+C1 3 4 9.1E-6 IC=0.0
+R3 5 4 5; free space reduced by sqrt(dielectric constant)
+R2 2 4 1.098901098901099E8
+R4 3 26 412222.22222222225
+R6 3 7 412.2222222222223
+C5 7 1 2.7299999999999997E-7 IC=0.0
+R7 3 10 41.22222222222223
+C6 10 1 2.7299999999999997E-7 IC=0.0
+R8 3 13 4.122222222222223
+C7 13 1 2.7299999999999997E-7 IC=0.0
+C2 26 1 2.7299999999999997E-7 IC=0.0
+R9 3 28 41222.222222222226
+C3 28 1 2.7299999999999997E-7 IC=0.0
+R10 3 29 4122.222222222223
+C4 29 1 2.7299999999999997E-7 IC=0.0
+L8 1 5 15p
+R24 1 5 0.0055650000000000005
+L12 5 4 1n
+.ENDS]]>
+      </parameter>
+      <image>
+        <hotzone points="-24,60,24,-60"/>
+        <shape type="line" width="Hair" color="#0000ff" points="0,-60,0,-40"/>
+        <shape type="line" width="Hair" color="#0000ff" points="0,60,0,40"/>
+        <shape type="line" width="1" color="#0000ff" points="24,-6,-24,-6"/>
+        <shape type="line" width="1" color="#0000ff" points="0,40,0,6"/>
+        <shape type="line" width="1" color="#0000ff" points="0,-6,0,-40"/>
+        <shape type="line" width="1" color="#0000ff" points="24,6,-24,6"/>
+        <legend text="22 uF" position="8,18" orientation="0" fontname="Arial" fontsize="12" bold="0" italic="0" color="#229922"/>
+        <legend text="3.71 mOhm" position="8,32" orientation="0" fontname="Arial" fontsize="12" bold="0" italic="0" color="#229922"/>
+        <legend text="qty=2" position="8,48" orientation="0" fontname="Arial" fontsize="12" bold="0" italic="0" color="#229922"/>
+        <pin position="0,-60" dir="0" length="0" text="2"/>
+        <pin position="0,60" dir="0" length="0" text="4"/>
+        <label text="Cout" position="1676,378" textroot=" " orientation="0" color="#228822"/>
+      </image>
+    </component>
+    <component type="IOut" typeid="34" position="1820,200" mirrored="0" nodematch="0" macrotype="2" orientation="0">
+      <parameter idx="0" encrypted="0">
+        <![CDATA[***********************************
+*     Created by WB Importer      *
+***********************************
+.SUBCKT IOut 1 2 
+V_Iprobe 1 2 0.0
+.ENDS
+]]>
+      </parameter>
+      <parameter idx="1" name="VALUE" value="0"/>
+      <image>
+        <hotzone points="-30,-6,30,6"/>
+        <shape type="line" width="Hair" color="#0000ff" points="-30,0,30,0"/>
+        <shape type="line" width="1" color="#0000ff" points="-6,-4,-6,4"/>
+        <shape type="line" width="1" color="#0000ff" points="-6,4,4,0"/>
+        <shape type="line" width="1" color="#0000ff" points="4,0,-6,-4"/>
+        <pin position="-30,0" dir="0" length="0" text="1"/>
+        <pin position="30,0" dir="0" length="0" text="2"/>
+        <label text="IOut" position="1820,200" textroot=" " orientation="0" color="#228822"/>
+      </image>
+    </component>
+    <wire points="1850,200,1870,200" label=""/>
+    <wire points="180,640,200,640" label=""/>
+    <component type="Rfbt" mirrored="0" typeid="57" nodematch="0" macrotype="2" position="1480,320" orientation="0">
+      <parameter idx="0" encrypted="0">
+        <![CDATA[
+***********************************
+*     Created by WB Importer      *
+***********************************
+.subckt MAIN_BLOCK_WB_TPS562200_BUCK_BLOCK_Rfbt 7 4
+Rfbt 7 4 56200.0
+
+.ends]]>
+      </parameter>
+      <image>
+        <hotzone points="-10,60,10,-60"/>
+        <shape type="line" width="1" color="#0000ff" points="0,60,0,40"/>
+        <shape type="line" width="1" color="#0000ff" points="0,40,-10,30"/>
+        <shape type="line" width="1" color="#0000ff" points="-10,30,10,10"/>
+        <shape type="line" width="1" color="#0000ff" points="10,10,-10,-10"/>
+        <shape type="line" width="1" color="#0000ff" points="-10,-10,10,-30"/>
+        <shape type="line" width="1" color="#0000ff" points="10,-30,0,-40"/>
+        <shape type="line" width="1" color="#0000ff" points="0,-40,0,-60"/>
+        <legend text="56.2 kOhm" position="10,-8" orientation="0" fontname="Arial" fontsize="12" bold="0" italic="0" color="#229922"/>
+        <pin position="0,60" dir="0" length="0" text="4"/>
+        <pin position="0,-60" dir="0" length="0" text="7"/>
+        <label text="Rfbt" position="1498,290" textroot=" " orientation="0" color="#228822"/>
+      </image>
+    </component>
+    <component type="ICout" typeid="34" position="1670,250" mirrored="0" nodematch="0" macrotype="2" orientation="0">
+      <parameter idx="0" encrypted="0">
+        <![CDATA[***********************************
+*     Created by WB Importer      *
+***********************************
+.SUBCKT ICout 1 2 
+V_Iprobe 1 2 0.0
+.ENDS
+]]>
+      </parameter>
+      <parameter idx="1" name="VALUE" value="0"/>
+      <image>
+        <hotzone points="6,-30,-6,30"/>
+        <shape type="line" width="Hair" color="#0000ff" points="0,-30,0,30"/>
+        <shape type="line" width="1" color="#0000ff" points="4,-6,-4,-6"/>
+        <shape type="line" width="1" color="#0000ff" points="-4,-6,0,4"/>
+        <shape type="line" width="1" color="#0000ff" points="0,4,4,-6"/>
+        <pin position="0,-30" dir="0" length="0" text="1"/>
+        <pin position="0,30" dir="0" length="0" text="2"/>
+        <label text="ICout" position="1670,250" textroot=" " orientation="0" color="#228822"/>
+      </image>
+    </component>
+    <wire points="180,200,200,200" label=""/>
+    <component type="VOut" typeid="4" position="1710,200" orientation="0" mirrored="0">
+      <image>
+        <label text="VOut" position="1710,170" textroot="VOut" orientation="0" color="#228822"/>
+      </image>
+    </component>
+    <wire points="200,200,250,200" label=""/>
+    <wire points="360,470,360,640" label=""/>
+    <wire points="360,350,360,200" label=""/>
+    <wire points="440,200,310,200" label=""/>
+    <wire points="500,200,580,200" label=""/>
+    <wire points="560,320,560,640" label=""/>
+    <wire points="560,260,580,260" label=""/>
+    <wire points="560,200,560,260" label=""/>
+    <wire points="580,320,560,320" label=""/>
+    <wire points="860,400,860,320" label=""/>
+    <wire points="860,400,1480,400" label=""/>
+    <wire points="860,260,910,260" label=""/>
+    <wire points="860,200,1010,200" label=""/>
+    <wire points="890,660,890,640" label=""/>
+    <wire points="910,350,910,260" label=""/>
+    <wire points="970,350,910,350" label=""/>
+    <wire points="970,230,970,200" label=""/>
+    <wire points="1070,200,1090,200" label=""/>
+    <wire points="1230,200,1210,200" label=""/>
+    <wire points="1480,580,1480,640" label=""/>
+    <wire points="1480,380,1480,460" label=""/>
+    <wire points="1480,260,1480,200" label=""/>
+    <wire points="1670,640,1670,460" label=""/>
+    <wire points="1670,340,1670,280" label=""/>
+    <wire points="1670,220,1670,200" label=""/>
+    <wire points="1790,200,1290,200" label=""/>
+    <wire points="1850,640,200,640" label=""/>
+    <wire points="180,200,180,220" label=""/>
+    <wire points="180,620,180,640" label=""/>
+    <component type="Vin_2" typeid="57" position="180,360" mirrored="0" nodematch="0" macrotype="2" orientation="0">
+      <parameter idx="0" encrypted="0">
+        <![CDATA[
+***********************************
+*     Created by WB Importer      *
+***********************************
+.SUBCKT INPUT_BLOCK_Vin_WB_STARTUP_VOLTAGE_SOURCE 1 2
+Rsource 3 1 0
+Vin1 3 2 PULSE 0 12.0 0 10u
+.ENDS]]>
+      </parameter>
+      <image>
+        <hotzone points="30,-60,-30,60"/>
+        <shape type="line" width="Hair" color="#0000ff" points="0,60,0,30"/>
+        <shape type="line" width="Hair" color="#0000ff" points="0,-60,0,-30"/>
+        <shape type="line" width="Hair" color="#0000ff" points="20,-30,20,-40"/>
+        <shape type="line" width="Hair" color="#0000ff" points="14,-34,26,-34"/>
+        <shape type="line" width="Hair" color="#0000ff" points="14,34,26,34"/>
+        <shape type="line" width="1" color="#0000ff" points="-22,10,-16,10"/>
+        <shape type="line" width="1" color="#0000ff" points="-16,10,-14,-10"/>
+        <shape type="line" width="1" color="#0000ff" points="-14,-10,22,-10"/>
+        <shape type="ellipse" points="-30,30,30,-30" color="#0000ff" width="2"/>
+        <pin position="0,-60" dir="0" length="0" text="1"/>
+        <pin position="0,60" dir="0" length="0" text="2"/>
+        <label text="Vin_2" position="210,330" textroot=" " orientation="0" color="#228822"/>
+      </image>
+    </component>
+    <wire points="180,420,180,620" label=""/>
+    <wire points="180,300,180,220" label=""/>
+    <component type="ILoad" typeid="34" position="1870,310" mirrored="0" nodematch="0" macrotype="2" orientation="0">
+      <parameter idx="0" encrypted="0">
+        <![CDATA[***********************************
+*     Created by WB Importer      *
+***********************************
+.SUBCKT ILoad 1 2 
+V_Iprobe 1 2 0.0
+.ENDS
+]]>
+      </parameter>
+      <parameter idx="1" name="VALUE" value="0"/>
+      <image>
+        <hotzone points="6,-30,-6,30"/>
+        <shape type="line" width="Hair" color="#0000ff" points="0,-30,0,30"/>
+        <shape type="line" width="1" color="#0000ff" points="4,-6,-4,-6"/>
+        <shape type="line" width="1" color="#0000ff" points="-4,-6,0,4"/>
+        <shape type="line" width="1" color="#0000ff" points="0,4,4,-6"/>
+        <pin position="0,-30" dir="0" length="0" text="1"/>
+        <pin position="0,30" dir="0" length="0" text="2"/>
+        <label text="ILoad" position="1870,310" textroot=" " orientation="0" color="#228822"/>
+      </image>
+    </component>
+    <wire points="1870,200,1870,220" label=""/>
+    <wire points="1870,620,1870,640" label=""/>
+    <component type="Rload" mirrored="0" typeid="57" nodematch="0" macrotype="2" position="1870,500" orientation="0">
+      <parameter idx="0" encrypted="0">
+        <![CDATA[
+***********************************
+*     Created by WB Importer      *
+***********************************
+.subckt OUTPUT_BLOCK_WB_OUTPUT_BLOCK_STARTUP_PROBE_Rload 1 2
+Rload 1 2 5.0
+
+.ends]]>
+      </parameter>
+      <image>
+        <hotzone points="-10,60,10,-60"/>
+        <shape type="line" width="1" color="#0000ff" points="0,60,0,40"/>
+        <shape type="line" width="1" color="#0000ff" points="0,40,-10,30"/>
+        <shape type="line" width="1" color="#0000ff" points="-10,30,10,10"/>
+        <shape type="line" width="1" color="#0000ff" points="10,10,-10,-10"/>
+        <shape type="line" width="1" color="#0000ff" points="-10,-10,10,-30"/>
+        <shape type="line" width="1" color="#0000ff" points="10,-30,0,-40"/>
+        <shape type="line" width="1" color="#0000ff" points="0,-40,0,-60"/>
+        <pin position="0,-60" dir="0" length="0" text="1"/>
+        <pin position="0,60" dir="0" length="0" text="2"/>
+        <label text="Rload" position="1888,470" textroot=" " orientation="0" color="#228822"/>
+      </image>
+    </component>
+    <wire points="1870,620,1870,560" label=""/>
+    <wire points="1870,380,1870,440" label=""/>
+    <wire points="1870,380,1870,340" label=""/>
+    <wire points="1870,220,1870,280" label=""/>
+  </circuit>
+  <analysis>
+    <altium_simulation>
+      <parameter idx="0" name="TSTOP" value="1100u" group=".TRAN"/>
+      <parameter idx="1" name="RELTOL" value="0.001" group=".TRAN"/>
+      <parameter idx="2" name="VABSTOL" value="10u" group=".TRAN"/>
+      <parameter idx="3" name="KCLTOL" value="10n" group=".TRAN"/>
+      <parameter idx="4" name="LTERATIO" value="20" group=".TRAN"/>
+      <parameter idx="5" name="IABSTOL" value="10n" group=".TRAN"/>
+      <parameter idx="6" name="TRES" value="2n" group=".TRAN"/>
+      <parameter idx="7" name="TSTART" value="0" group=".TRAN"/>
+      <parameter idx="8" name="CMIN" value="1f" group=".TRAN"/>
+      <parameter idx="9" name="LTERELRATIO" value="20" group=".TRAN"/>
+      <parameter idx="10" name="OPTSTEP" value="off" group=".TRAN"/>
+      <parameter idx="11" name="MAXMOS_DIM" value="1000000000" group=".OPTIONS"/>
+      <parameter idx="12" name="TRAN_LIMITING" value="true" group=".OPTIONS"/>
+      <parameter idx="13" name="FILTER" value="false" group=".OPTIONS"/>
+      <parameter idx="14" name="ROUND_RELTOL" value="1" group=".OPTIONS"/>
+      <parameter idx="15" name="CHECK_DCMAX" value="false" group=".OPTIONS"/>
+      <parameter idx="16" name="ROUND_ABSTOL" value="1" group=".OPTIONS"/>
+      <parameter idx="17" name="Simulator" value="pspice" group="GENERAL"/>
+    </altium_simulation>
+  </analysis>
+  <encrypt_macros>
+    <macro filename="MAIN_BLOCK.U1.WB_TPS562200DDC.enl">
+      <![CDATA[-------- ENCRYPTED FILE --------
+BH7iMHCaJjI=
+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
+]]>
+    </macro>
+  </encrypt_macros>
+</schematic>
